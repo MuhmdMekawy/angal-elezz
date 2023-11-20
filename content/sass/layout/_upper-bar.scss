@@ -1,0 +1,147 @@
+.whatsapp-icon{
+  position: fixed;
+  bottom: 30px;
+  left: 50px;
+  z-index: 7;
+  animation: lighten infinite alternate 2s;
+}
+.text-bar{
+  padding: 15px 0;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 2;
+  &::after{
+    content: '';
+    @extend .overlay;
+    background: #7E7E7EB2;
+    z-index: -1;
+  }
+  .text{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+}
+.upper-bar {
+  padding: 8px 0;
+  background-color: $backgroundColor;
+  // border: 1px solid $mainColor;
+  color: $textColor;
+  border-bottom: 1px solid #fff;
+  padding: 12px 0;
+  position: relative;
+  z-index: 3;
+  .wrapper {
+    @include displayFlex();
+    justify-content: space-between;
+    color: $textColor;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    .image-wrap{
+      max-width: 150px;
+    }
+    .info-details{
+      @include displayFlex(center , space-between , 70px);
+      .info-tab{
+        @include displayFlex(center , space-between , 17px);
+        .icon{
+          flex-shrink: 0;
+          max-width: 38px;
+          svg{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .info-text{
+          @include displayFlex(start , start , 11px);
+          flex-direction: column;
+          h3{
+            font-size: 14px;
+            font-weight: 400;
+          } 
+          h4{
+            font-size: 16px;
+            font-weight: 700;
+            color: $blackColor;
+          }
+        }
+      }
+      
+    } 
+    .mobile-navbar{
+      padding: 10px 14px 7px;
+      background: transparent;
+      border-radius: 5px;
+      border: 1px solid $mainColor;
+      transition: $transition3;
+      color: $textColor;
+      display: none;
+      &:hover{
+        background: $mainColor;
+        color: #fff;
+      }
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .icons {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   gap: 20px;
+//   width: 35%;
+
+//   div {
+
+
+//     a {
+//       display: flex;
+//       align-items: center;
+//       justify-content: space-between;
+//       gap: 10px;
+
+//       svg {
+//         // background-color: #1A39B7;
+//         color: $textColor;
+//         padding: 8px;
+//         width: 17px;
+//         border-radius: 50%;
+//         height: 17px;
+//       }
+//     }
+//   }
+
+
+// }
+
+// .languages {
+
+//   display: flex;
+//   align-items: center;
+//   gap: 5px;
+
+//   img {
+//     width: 25px;
+//   }
+
+
+// }

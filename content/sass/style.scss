@@ -1,0 +1,32 @@
+// #################### import abstract ##################
+
+@import 'abstract/variables';
+@import 'abstract/mixins';
+@import 'abstract/generic';
+
+// ################### import layout #####################
+
+@import 'layout/upper-bar' ;
+@import 'layout/navbar' ;
+@import 'layout/footer' ;
+
+// ################### import components #################
+@import 'components/homeSlider';
+@import 'components/aboutSection';
+@import 'components/servicesSection';
+@import 'components/contactBar';
+@import 'components/projectsSection';
+@import 'components/staticticsSection';
+@import 'components/newsSection';
+@import 'components/supporterSlider';
+@import 'components/contactSection';
+// #################### import pages  ####################
+
+@import 'pages/aboutus';
+@import 'pages/clientsPage';
+@import 'pages/newsPage';
+
+
+// #################### import media query ###############
+
+@import 'media/media';

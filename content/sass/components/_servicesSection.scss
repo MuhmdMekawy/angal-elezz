@@ -1,0 +1,46 @@
+section.services{
+  .content{
+    @include displayGrid(300px , 40px);
+
+    padding-top: 50px;
+    .service-box{
+      // min-height: 348px;
+      border: 0.5px solid $textColor;
+      position: relative;
+      overflow: hidden;
+      transition: $transition7;
+      .image-wrap{
+        // height: 100%;
+        height: 240px;
+      }
+      .service-info{
+        position: relative;
+        background: #fff;
+        z-index: 3;
+        &::after{
+          transition: $transition7;
+          content: "";
+          position: absolute;
+          left: 0px;
+          top: -64px;
+          width: 100%;
+          height: 100%;
+          clip-path: polygon(50% 0%, 0 62%, 100% 62%);
+          background: white;
+          z-index: 3;
+        }
+      }
+      &:hover{
+        .service-info{
+          z-index: 9;
+          &::after{
+            clip-path: unset;
+            height: 40px;
+            border-top: 8px solid $mainColor;
+            top: -40px;
+          }
+        }
+      }
+    }
+  }
+}

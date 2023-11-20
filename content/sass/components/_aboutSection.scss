@@ -1,0 +1,26 @@
+section.about-us{
+  .content{
+    @include displayFlex(center , space-between);
+    width: 100%;
+    .aboutus-text{
+      flex-shrink: 0;
+      .text{
+        max-width: 550px;
+        width: 100%;
+        max-height: 328px;
+        line-height: 45px;
+        margin-bottom: 33px;
+      }
+    
+    }
+    .image-wrap{
+      height: auto;
+      filter: drop-shadow(9px 13px 0px $mainColor);
+      overflow: hidden;
+      position: relative;
+      img{
+        clip-path: $clipPath;
+      }
+    }
+  }
+}

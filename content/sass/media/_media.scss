@@ -1,0 +1,133 @@
+@media (max-width:1400px){
+  .navbar .content .image-wrap{
+    padding: 31px 33px;
+  }
+}
+@media (max-width:1200px){
+  .navbar .content ul.navbar-links a{
+    padding: 37px 24px;
+  }
+  section.footer .content ul.social-links{
+    justify-content: start;
+  }
+}
+@media (max-width:992px){
+  .upper-bar .wrapper .mobile-navbar{
+    display: flex;
+  }
+  .upper-bar .wrapper .info-details {
+    display: none;
+  }
+  .navbar .content{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 300px;
+    height: 0%;
+    background: #fff;
+    color: $textColor;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    transform: unset;
+    z-index: 9;
+    overflow: hidden;
+    padding: 0 ;
+    text-align: start;
+    ul.navbar-links{
+      transform: unset;
+      flex-direction: column;
+      justify-content: start;
+      align-items: flex-start;
+      gap: 30px;
+       a{
+        padding: 0;
+        text-align: start;
+       }
+    }
+    .image-wrap{
+      transform: unset;
+      background: unset;
+      padding: 0;
+      img{
+        transform: unset;
+      }
+    }
+  }
+  .homepage-slider{
+    margin-top: 0;
+  }
+  section.about-us{
+    .content{
+      flex-wrap: wrap-reverse;
+      gap: 40px;
+    }
+  }
+  section.contact .content{
+    flex-wrap: wrap;
+  }
+  section.contact .content .contact-text{
+    height: fit-content;
+    gap: 60px;
+  }
+}
+@media (max-width:767px){
+  section.footer .content .form-wrapper{
+    padding: 20px ;
+  }
+  
+  section.contact .content .form-wrapper .wrap-flex{
+    flex-wrap: wrap;
+  }
+  section.about-us .content .aboutus-text .text{
+    margin-bottom: 20px;
+  }
+  section.footer .content .image-wrap{
+    margin: 0 auto;
+  }
+  section.footer .content ul.social-links{
+    justify-content: center;
+  }
+  section.services .content .service-box .service-info::after{
+    top: -61px;
+  }
+}
+@media (max-width:560px){
+  .homepage-slider .owl-nav{
+    display: none;
+  }
+  section.footer .content .form-wrapper button[type=submit]{
+    margin: 0 auto;
+  }
+  .text{
+    max-width: 300px !important;
+  }
+  .contact-bar .content{
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 0px 0 20px;
+  }
+  .contact-bar .content .image-wrap{
+    clip-path: unset;
+  }
+  .main-btn{
+    margin-inline-start:15px;
+  }
+  section{
+    padding: 20px 0;
+  }
+  .padding-page{
+    padding: 45px 0;
+  }
+  .padding-page.clients{
+    .content{
+      gap: 25px;
+    }
+  }
+  .padding-page.newsPage .title h3{
+    font-size: 18px;
+  }
+  .padding-page.newsPage .news-description{
+    font-size: 14px;
+  }
+}

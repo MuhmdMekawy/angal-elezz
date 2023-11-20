@@ -1,0 +1,41 @@
+.padding-page.newsPage{
+  .title{
+    @include displayFlex(center , space-between);
+    width: 100%;
+    flex-wrap: wrap;
+    h3{
+      font-size: 25px;
+      font-weight: 400;
+      color: $blackColor;
+      max-height: 32px;
+      overflow: hidden;
+    }
+    .author-info{
+      @include displayFlex();
+      h4{
+        color: $textColor;
+        @include displayFlex(center , space-between , 20px);
+        .icon{
+          width: 17px;
+          svg{
+            color: $textColor;
+          }
+        }
+        span{
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  .image-wrap{
+    max-height: 505px;
+    overflow: hidden;
+    margin: 30px 0;
+  }
+  .news-description{
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 45px;
+  }
+}

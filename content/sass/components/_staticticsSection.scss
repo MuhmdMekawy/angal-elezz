@@ -1,0 +1,44 @@
+.statictics{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  padding: 89px 0;
+  &::after{
+    content: '';
+    @extend .overlay;
+    background: #7E7E7EB2;
+    z-index: -1;
+  }
+  .content{
+    @include displayGrid(300px , 40px);
+    .statictics-box{
+      max-width: 345px;
+      width: 100%;
+      padding: 50px 0 68px;
+      margin: 0 auto;
+      text-align: center;
+      border: 2px solid $mainColor;
+      .icon{
+        svg{
+          width: 70px;
+          height: 70px;
+          color: $mainColor;
+        }
+      }
+      h4{
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        margin-top: 58px;
+        &:last-child{
+          margin: 0;
+          font-size: 25px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

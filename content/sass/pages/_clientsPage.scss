@@ -1,0 +1,5 @@
+.padding-page.clients{
+  .content{
+    @include displayGrid(200px , 57px);
+  }
+}

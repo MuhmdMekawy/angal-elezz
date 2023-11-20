@@ -1,0 +1,66 @@
+section.projects{
+  .content{
+    @include displayGrid(300px , 40px);
+    .service-box{
+      max-width: 345px;
+      margin: 0 auto;
+      // height: fit-content;
+      border: 0.5px solid $textColor;
+      text-align: center;
+      max-height: 345px;
+      overflow: hidden;
+      position: relative;
+      transition: 1s;
+      .image-wrap{
+        transition: 1s;
+        height: 240px;
+      }
+      .service-info{
+        border-top: 11px solid $mainColor;
+        .service-title{
+          padding: 20px 0 10px;
+          h3{
+            font-size: 22px;
+            font-weight: 700;
+            margin:0px 0 10px;
+          }
+          .text{
+            font-size: 16px;
+            font-weight: 400;
+            max-height: 35px;
+          }
+        }
+        .service-tabs{
+          @include displayFlex();
+          border-top: 0.5px solid $textColor;
+          gap: 0;
+          transition: 1s;
+          .service-tab{
+            padding: 13px 0;
+            flex-grow: 1;
+            h5{
+              font-size: 16px;
+              font-weight: 400;
+              max-height: 35px;
+              @include displayFlex(center , center , 5px);
+              color: $textColor;
+              &:first-child{
+                margin-bottom: 10px;
+              }
+            }
+            &:first-child{
+              border-left: 0.5px solid $textColor;
+            }
+          }
+        }
+      }
+      &:hover{
+        max-height: 380px;
+        .image-wrap{
+          height: 200px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

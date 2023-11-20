@@ -1,0 +1,115 @@
+section.contact{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed !important;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  padding-top: 78px;
+  margin-bottom: 70px;
+  &::after{
+    content: '';
+    @extend .overlay;
+    z-index: -1;
+  }
+  .content{
+    @include displayFlex(start , space-between);
+    width: 100%;
+    .contact-text{
+      @include displayFlex(start , space-between , 30px);
+      flex-direction: column;
+      flex-shrink: 0;
+      height: 450px;
+      justify-content: space-between;
+      .head{
+        margin-bottom: 0;
+        h3{
+          font-size: 50px;
+          font-weight: 700;
+          color: $mainColor;
+          margin-bottom: 24px;
+        }
+        .text{
+          max-width: 467px;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 40px;
+          color: #fff;
+        }
+      }
+      .info-details{
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+
+        .info-tab{
+          @include displayFlex(center , space-between);
+          width: 100%;
+          .icon{
+            flex-shrink: 0;
+            svg{
+              width: 25px;
+              height: 25px;
+              color: $mainColor;
+            }
+          }
+          .info-text{
+            margin-inline-end: auto;
+            h4{
+              font-size: 20px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+    .form-wrapper{
+      padding: 40px 33px;
+      border: 2px solid #fff;
+      border-radius: 8px;
+      width: 100%;
+      min-height: 511px;
+      .wrap-flex{
+        @include displayFlex();
+        width: 100%;
+        margin-bottom: 20px;
+        .input-wrap{
+          flex-grow: 1;
+          border: 1px solid #fff;
+          padding: 15px;
+          height: 59px;
+          input{
+            background: transparent;
+            direction: inherit !important;
+            color: #fff;
+            &::placeholder{
+              color: inherit;
+            }
+          }
+        }
+      }
+      textarea{
+        background: transparent;
+        border: 1px solid #fff;
+        padding: 16px 20px;
+        color: #fff;
+        height: 300px;
+        max-height: unset;
+        &::placeholder{
+          color: #fff;
+        }
+      }
+      button[type='submit']{
+        margin-inline-start: auto;
+        margin-top: 18px;
+      }
+      input[type='submit'] , svg{
+        transform: skew(30deg);
+        &:hover{
+          gap: 26px;
+        }
+      }
+    }
+  }
+}
